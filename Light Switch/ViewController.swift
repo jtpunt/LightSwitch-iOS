@@ -15,6 +15,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet weak var TJCR_Switch1: UISwitch!
+    @IBOutlet weak var label: UILabel!
+    
+    @IBAction func TJCR_Action1(_ sender: UISwitch) {
+     
+        if TJCR_Switch1.isOn{
+            label.text = "is on";
+        }else{
+            label.text = "is off";
+        }
+    }
 }
 

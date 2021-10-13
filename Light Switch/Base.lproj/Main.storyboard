@@ -32,6 +32,9 @@
                                                     </textField>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9k2-XI-yWn">
                                                         <rect key="frame" x="212.5" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="TJCR_Action1:" destination="BYZ-38-t0r" eventType="valueChanged" id="I9w-cI-ODi"/>
+                                                        </connections>
                                                     </switch>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JGL-x5-36i">
                                                         <rect key="frame" x="321.5" y="0.0" width="51" height="31"/>
@@ -74,6 +77,13 @@
                                         </subviews>
                                         <viewLayoutGuide key="safeArea" id="njn-ip-1Fg"/>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtN-Bd-m40">
+                                        <rect key="frame" x="171" y="8" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
@@ -81,6 +91,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="H0r-0i-4sc"/>
                     </view>
+                    <connections>
+                        <outlet property="TJCR_Switch1" destination="9k2-XI-yWn" id="mPZ-qv-JqJ"/>
+                        <outlet property="label" destination="XtN-Bd-m40" id="9Mw-km-zYx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
