@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,24 +22,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" axis="vertical" spacing="33" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Av-u8-kwV">
-                                        <rect key="frame" x="0.0" y="39" width="370.5" height="118"/>
+                                        <rect key="frame" x="0.0" y="39" width="362.5" height="115"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Djn-hs-I0F">
-                                                <rect key="frame" x="0.0" y="0.0" width="370.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="362.5" height="31"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="TJ Computer Room" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ry3-bf-dkP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="152.5" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="TJ Computer Room" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ry3-bf-dkP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="144.5" height="31"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9k2-XI-yWn">
-                                                        <rect key="frame" x="212.5" y="0.0" width="51" height="31"/>
+                                                        <rect key="frame" x="204.5" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="TJCR_Action1:" destination="BYZ-38-t0r" eventType="valueChanged" id="I9w-cI-ODi"/>
                                                         </connections>
                                                     </switch>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JGL-x5-36i">
-                                                        <rect key="frame" x="321.5" y="0.0" width="51" height="31"/>
+                                                        <rect key="frame" x="313.5" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="TJCR_Action2:" destination="BYZ-38-t0r" eventType="valueChanged" id="di0-ZD-mNl"/>
                                                         </connections>
@@ -45,21 +48,21 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="LUZ-zj-O9v">
-                                                <rect key="frame" x="0.0" y="43.5" width="370.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="42" width="362.5" height="31"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="TJ Living Room" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Y0-fC-gEU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150.5" height="31"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="TJ Living Room" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Y0-fC-gEU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="142.5" height="31"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebW-Mq-bs2" userLabel="TJLRSwitch1">
-                                                        <rect key="frame" x="211.5" y="0.0" width="51" height="31"/>
+                                                        <rect key="frame" x="203.5" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="TJLR_Action1:" destination="BYZ-38-t0r" eventType="valueChanged" id="UyE-Fy-O6V"/>
                                                         </connections>
                                                     </switch>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2yP-7a-O7N" userLabel="TJCRSwitch2">
-                                                        <rect key="frame" x="321.5" y="0.0" width="51" height="31"/>
+                                                        <rect key="frame" x="313.5" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="TJLR_Action2:" destination="BYZ-38-t0r" eventType="valueChanged" id="fXA-n1-zfO"/>
                                                         </connections>
@@ -67,22 +70,22 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="hN0-GO-Dn4">
-                                                <rect key="frame" x="0.0" y="87" width="370.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="84" width="362.5" height="31"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LS Living Room" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sa8-2l-Gah">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150.5" height="31"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="LS Living Room" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sa8-2l-Gah">
+                                                        <rect key="frame" x="0.0" y="0.0" width="142.5" height="31"/>
                                                         <rect key="contentStretch" x="0.5" y="0.0" width="1" height="1"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="top" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sgB-tn-wh8">
-                                                        <rect key="frame" x="211.5" y="0.0" width="51" height="31"/>
+                                                        <rect key="frame" x="203.5" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="LSLR_Action1:" destination="BYZ-38-t0r" eventType="valueChanged" id="xlf-Ro-vY7"/>
                                                         </connections>
                                                     </switch>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fnk-Ce-BUn">
-                                                        <rect key="frame" x="321.5" y="0.0" width="51" height="31"/>
+                                                        <rect key="frame" x="313.5" y="0.0" width="51" height="31"/>
                                                         <connections>
                                                             <action selector="LSLR_Action2:" destination="BYZ-38-t0r" eventType="valueChanged" id="Uis-A7-FGL"/>
                                                         </connections>
@@ -91,13 +94,14 @@
                                             </stackView>
                                         </subviews>
                                         <viewLayoutGuide key="safeArea" id="njn-ip-1Fg"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="H0r-0i-4sc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="LSLR_Switch1" destination="sgB-tn-wh8" id="DPg-Vx-Yta"/>
@@ -113,4 +117,12 @@
             <point key="canvasLocation" x="136.80000000000001" y="135.38230884557723"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="secondarySystemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
